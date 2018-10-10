@@ -103,17 +103,29 @@ export const elevationXs = 2;
 export const fontFamily = "sans-serif";
 export const fontFamilyEmphasize = "sans-serif-medium";
 export const fontSizeBase = 16;
+export const fontSizeCaps = 10;
 export const fontSizeLg = 20;
 export const fontSizeSm = 14;
 export const fontSizeXl = 24;
 export const fontSizeXs = 12;
-export const fontSizeXxl = 34;
-export const lineHeightBase = 24;
-export const lineHeightLg = 28;
-export const lineHeightSm = 20;
-export const lineHeightXl = 32;
-export const lineHeightXs = 18;
-export const lineHeightXxl = 40;
+export const fontSizeXxl = 36;
+export const fontSizeXxxl = 42;
+export const letterSpacingBase = -0.2;
+export const letterSpacingCaps = 0.4;
+export const letterSpacingLg = -0.4;
+export const letterSpacingSm = 0;
+export const letterSpacingXl = -0.6;
+export const letterSpacingXs = 0;
+export const letterSpacingXxl = -1;
+export const letterSpacingXxxl = -1.2;
+export const lineHeightBase = 21.65;
+export const lineHeightCaps = 13.39;
+export const lineHeightLg = 26.78;
+export const lineHeightSm = 18.52;
+export const lineHeightXl = 31.91;
+export const lineHeightXs = 16.52;
+export const lineHeightXxl = 48.43;
+export const lineHeightXxxl = 56.69;
 export const spacingBase = 16;
 export const spacingLg = 24;
 export const spacingMd = 8;
@@ -123,23 +135,37 @@ export const spacingXl = 32;
 export const spacingXxl = 40;
 export const textBaseFontSize = 16;
 export const textBaseFontWeight = "400";
-export const textBaseLineHeight = 24;
+export const textBaseLetterSpacing = -0.2;
+export const textBaseLineHeight = 21.65;
+export const textCapsFontSize = 10;
+export const textCapsFontWeight = "400";
+export const textCapsLetterSpacing = 0.4;
+export const textCapsLineHeight = 13.39;
 export const textEmphasizedFontWeight = "500";
 export const textLgFontSize = 20;
 export const textLgFontWeight = "400";
-export const textLgLineHeight = 28;
+export const textLgLetterSpacing = -0.4;
+export const textLgLineHeight = 26.78;
 export const textSmFontSize = 14;
 export const textSmFontWeight = "400";
-export const textSmLineHeight = 20;
+export const textSmLetterSpacing = 0;
+export const textSmLineHeight = 18.52;
 export const textXlFontSize = 24;
 export const textXlFontWeight = "400";
-export const textXlLineHeight = 32;
+export const textXlLetterSpacing = -0.6;
+export const textXlLineHeight = 31.91;
 export const textXsFontSize = 12;
 export const textXsFontWeight = "400";
-export const textXsLineHeight = 18;
-export const textXxlFontSize = 34;
+export const textXsLetterSpacing = 0;
+export const textXsLineHeight = 16.52;
+export const textXxlFontSize = 36;
 export const textXxlFontWeight = "400";
-export const textXxlLineHeight = 40;
+export const textXxlLetterSpacing = -1;
+export const textXxlLineHeight = 48.43;
+export const textXxxlFontSize = 42;
+export const textXxxlFontWeight = "400";
+export const textXxxlLetterSpacing = -1.2;
+export const textXxxlLineHeight = 56.69;
 export const animations = {
 animationDurationBase,
 animationDurationSm,
@@ -228,28 +254,60 @@ elevationXs,
 };
 export const fontSizes = {
 textBaseFontSize,
+textCapsFontSize,
 textLgFontSize,
 textSmFontSize,
 textXlFontSize,
 textXsFontSize,
 textXxlFontSize,
+textXxxlFontSize,
 };
 export const fontWeights = {
 textBaseFontWeight,
+textCapsFontWeight,
 textEmphasizedFontWeight,
 textLgFontWeight,
 textSmFontWeight,
 textXlFontWeight,
 textXsFontWeight,
 textXxlFontWeight,
+textXxxlFontWeight,
+};
+export const letterSpacings = {
+letterSpacingBase,
+letterSpacingCaps,
+letterSpacingLg,
+letterSpacingSm,
+letterSpacingXl,
+letterSpacingXs,
+letterSpacingXxl,
+letterSpacingXxxl,
+textBaseLetterSpacing,
+textCapsLetterSpacing,
+textLgLetterSpacing,
+textSmLetterSpacing,
+textXlLetterSpacing,
+textXsLetterSpacing,
+textXxlLetterSpacing,
+textXxxlLetterSpacing,
 };
 export const lineHeights = {
+lineHeightBase,
+lineHeightCaps,
+lineHeightLg,
+lineHeightSm,
+lineHeightXl,
+lineHeightXs,
+lineHeightXxl,
+lineHeightXxxl,
 textBaseLineHeight,
+textCapsLineHeight,
 textLgLineHeight,
 textSmLineHeight,
 textXlLineHeight,
 textXsLineHeight,
 textXxlLineHeight,
+textXxxlLineHeight,
 };
 export const radii = {
 borderRadiusPill,
@@ -273,15 +331,11 @@ export const typesettings = {
 fontFamily,
 fontFamilyEmphasize,
 fontSizeBase,
+fontSizeCaps,
 fontSizeLg,
 fontSizeSm,
 fontSizeXl,
 fontSizeXs,
 fontSizeXxl,
-lineHeightBase,
-lineHeightLg,
-lineHeightSm,
-lineHeightXl,
-lineHeightXs,
-lineHeightXxl,
+fontSizeXxxl,
 };

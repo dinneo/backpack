@@ -87,6 +87,9 @@
     "FONT_SIZE_BASE": {
       "value": 16
     },
+    "FONT_SIZE_CAPS": {
+      "value": 10
+    },
     "FONT_SIZE_LG": {
       "value": 20
     },
@@ -100,7 +103,10 @@
       "value": 12
     },
     "FONT_SIZE_XXL": {
-      "value": 34
+      "value": 36
+    },
+    "FONT_SIZE_XXXL": {
+      "value": 42
     },
     "FONT_WEIGHT_MEDIUM": {
       "value": "500"
@@ -168,23 +174,53 @@
     "GREEN_900": {
       "value": "#006638"
     },
+    "LETTER_SPACING_BASE": {
+      "value": -0.2
+    },
+    "LETTER_SPACING_CAPS": {
+      "value": 0.4
+    },
+    "LETTER_SPACING_LG": {
+      "value": -0.4
+    },
+    "LETTER_SPACING_SM": {
+      "value": 0
+    },
+    "LETTER_SPACING_XL": {
+      "value": -0.6
+    },
+    "LETTER_SPACING_XS": {
+      "value": 0
+    },
+    "LETTER_SPACING_XXL": {
+      "value": -1
+    },
+    "LETTER_SPACING_XXXL": {
+      "value": -1.2
+    },
     "LINE_HEIGHT_BASE": {
-      "value": 24
+      "value": 21
+    },
+    "LINE_HEIGHT_CAPS": {
+      "value": 13
     },
     "LINE_HEIGHT_LG": {
-      "value": 28
+      "value": 26
     },
     "LINE_HEIGHT_SM": {
-      "value": 20
-    },
-    "LINE_HEIGHT_XL": {
-      "value": 32
-    },
-    "LINE_HEIGHT_XS": {
       "value": 18
     },
+    "LINE_HEIGHT_XL": {
+      "value": 31
+    },
+    "LINE_HEIGHT_XS": {
+      "value": 16
+    },
     "LINE_HEIGHT_XXL": {
-      "value": 40
+      "value": 47
+    },
+    "LINE_HEIGHT_XXXL": {
+      "value": 55
     },
     "PINK_100": {
       "value": "#FFBFD7"
@@ -907,6 +943,13 @@
       "originalValue": "{!FONT_SIZE_BASE}",
       "name": "FONT_SIZE_BASE"
     },
+    "FONT_SIZE_CAPS": {
+      "value": "10",
+      "type": "font-size",
+      "category": "typesettings",
+      "originalValue": "{!FONT_SIZE_CAPS}",
+      "name": "FONT_SIZE_CAPS"
+    },
     "FONT_SIZE_LG": {
       "value": "20",
       "type": "font-size",
@@ -936,53 +979,130 @@
       "name": "FONT_SIZE_XS"
     },
     "FONT_SIZE_XXL": {
-      "value": "34",
+      "value": "36",
       "type": "font-size",
       "category": "typesettings",
       "originalValue": "{!FONT_SIZE_XXL}",
       "name": "FONT_SIZE_XXL"
     },
-    "LINE_HEIGHT_BASE": {
-      "value": "24",
-      "type": "size",
+    "FONT_SIZE_XXXL": {
+      "value": "42",
+      "type": "font-size",
       "category": "typesettings",
+      "originalValue": "{!FONT_SIZE_XXXL}",
+      "name": "FONT_SIZE_XXXL"
+    },
+    "LETTER_SPACING_BASE": {
+      "value": -0.0125,
+      "type": "letter-spacing",
+      "category": "letter-spacings",
+      "originalValue": "{!LETTER_SPACING_BASE}",
+      "name": "LETTER_SPACING_BASE"
+    },
+    "LETTER_SPACING_CAPS": {
+      "value": 0.04,
+      "type": "letter-spacing",
+      "category": "letter-spacings",
+      "originalValue": "{!LETTER_SPACING_CAPS}",
+      "name": "LETTER_SPACING_CAPS"
+    },
+    "LETTER_SPACING_LG": {
+      "value": -0.02,
+      "type": "letter-spacing",
+      "category": "letter-spacings",
+      "originalValue": "{!LETTER_SPACING_LG}",
+      "name": "LETTER_SPACING_LG"
+    },
+    "LETTER_SPACING_SM": {
+      "value": 0,
+      "type": "letter-spacing",
+      "category": "letter-spacings",
+      "originalValue": "{!LETTER_SPACING_SM}",
+      "name": "LETTER_SPACING_SM"
+    },
+    "LETTER_SPACING_XL": {
+      "value": -0.024999999999999998,
+      "type": "letter-spacing",
+      "category": "letter-spacings",
+      "originalValue": "{!LETTER_SPACING_XL}",
+      "name": "LETTER_SPACING_XL"
+    },
+    "LETTER_SPACING_XS": {
+      "value": 0,
+      "type": "letter-spacing",
+      "category": "letter-spacings",
+      "originalValue": "{!LETTER_SPACING_XS}",
+      "name": "LETTER_SPACING_XS"
+    },
+    "LETTER_SPACING_XXL": {
+      "value": -0.027777777777777776,
+      "type": "letter-spacing",
+      "category": "letter-spacings",
+      "originalValue": "{!LETTER_SPACING_XXL}",
+      "name": "LETTER_SPACING_XXL"
+    },
+    "LETTER_SPACING_XXXL": {
+      "value": -0.02857142857142857,
+      "type": "letter-spacing",
+      "category": "letter-spacings",
+      "originalValue": "{!LETTER_SPACING_XXXL}",
+      "name": "LETTER_SPACING_XXXL"
+    },
+    "LINE_HEIGHT_BASE": {
+      "value": 23.729999999999997,
+      "type": "size",
+      "category": "line-heights",
       "originalValue": "{!LINE_HEIGHT_BASE}",
       "name": "LINE_HEIGHT_BASE"
     },
-    "LINE_HEIGHT_LG": {
-      "value": "28",
+    "LINE_HEIGHT_CAPS": {
+      "value": 14.689999999999998,
       "type": "size",
-      "category": "typesettings",
+      "category": "line-heights",
+      "originalValue": "{!LINE_HEIGHT_CAPS}",
+      "name": "LINE_HEIGHT_CAPS"
+    },
+    "LINE_HEIGHT_LG": {
+      "value": 29.379999999999995,
+      "type": "size",
+      "category": "line-heights",
       "originalValue": "{!LINE_HEIGHT_LG}",
       "name": "LINE_HEIGHT_LG"
     },
     "LINE_HEIGHT_SM": {
-      "value": "20",
+      "value": 20.339999999999996,
       "type": "size",
-      "category": "typesettings",
+      "category": "line-heights",
       "originalValue": "{!LINE_HEIGHT_SM}",
       "name": "LINE_HEIGHT_SM"
     },
     "LINE_HEIGHT_XL": {
-      "value": "32",
+      "value": 35.029999999999994,
       "type": "size",
-      "category": "typesettings",
+      "category": "line-heights",
       "originalValue": "{!LINE_HEIGHT_XL}",
       "name": "LINE_HEIGHT_XL"
     },
     "LINE_HEIGHT_XS": {
-      "value": "18",
+      "value": 18.08,
       "type": "size",
-      "category": "typesettings",
+      "category": "line-heights",
       "originalValue": "{!LINE_HEIGHT_XS}",
       "name": "LINE_HEIGHT_XS"
     },
     "LINE_HEIGHT_XXL": {
-      "value": "40",
+      "value": 53.10999999999999,
       "type": "size",
-      "category": "typesettings",
+      "category": "line-heights",
       "originalValue": "{!LINE_HEIGHT_XXL}",
       "name": "LINE_HEIGHT_XXL"
+    },
+    "LINE_HEIGHT_XXXL": {
+      "value": 62.14999999999999,
+      "type": "size",
+      "category": "line-heights",
+      "originalValue": "{!LINE_HEIGHT_XXXL}",
+      "name": "LINE_HEIGHT_XXXL"
     },
     "SPACING_BASE": {
       "type": "size",
@@ -1047,12 +1167,47 @@
       "originalValue": "{!FONT_WEIGHT_REGULAR}",
       "name": "TEXT_BASE_FONT_WEIGHT"
     },
+    "TEXT_BASE_LETTER_SPACING": {
+      "value": -0.0125,
+      "type": "letter-spacing",
+      "category": "letter-spacings",
+      "originalValue": "{!LETTER_SPACING_BASE}",
+      "name": "TEXT_BASE_LETTER_SPACING"
+    },
     "TEXT_BASE_LINE_HEIGHT": {
-      "value": "24",
+      "value": 23.729999999999997,
       "type": "size",
       "category": "line-heights",
-      "name": "TEXT_BASE_LINE_HEIGHT",
-      "originalValue": "{!LINE_HEIGHT_BASE}"
+      "originalValue": "{!LINE_HEIGHT_BASE}",
+      "name": "TEXT_BASE_LINE_HEIGHT"
+    },
+    "TEXT_CAPS_FONT_SIZE": {
+      "value": "10",
+      "type": "font-size",
+      "category": "font-sizes",
+      "originalValue": "{!FONT_SIZE_CAPS}",
+      "name": "TEXT_CAPS_FONT_SIZE"
+    },
+    "TEXT_CAPS_FONT_WEIGHT": {
+      "value": "400",
+      "type": "string",
+      "category": "font-weights",
+      "originalValue": "{!FONT_WEIGHT_REGULAR}",
+      "name": "TEXT_CAPS_FONT_WEIGHT"
+    },
+    "TEXT_CAPS_LETTER_SPACING": {
+      "value": 0.04,
+      "type": "letter-spacing",
+      "category": "letter-spacings",
+      "originalValue": "{!LETTER_SPACING_CAPS}",
+      "name": "TEXT_CAPS_LETTER_SPACING"
+    },
+    "TEXT_CAPS_LINE_HEIGHT": {
+      "value": 14.689999999999998,
+      "type": "size",
+      "category": "line-heights",
+      "originalValue": "{!LINE_HEIGHT_CAPS}",
+      "name": "TEXT_CAPS_LINE_HEIGHT"
     },
     "TEXT_EMPHASIZED_FONT_WEIGHT": {
       "value": "500",
@@ -1075,12 +1230,19 @@
       "originalValue": "{!FONT_WEIGHT_REGULAR}",
       "name": "TEXT_LG_FONT_WEIGHT"
     },
+    "TEXT_LG_LETTER_SPACING": {
+      "value": -0.02,
+      "type": "letter-spacing",
+      "category": "letter-spacings",
+      "originalValue": "{!LETTER_SPACING_LG}",
+      "name": "TEXT_LG_LETTER_SPACING"
+    },
     "TEXT_LG_LINE_HEIGHT": {
-      "value": "28",
+      "value": 29.379999999999995,
       "type": "size",
       "category": "line-heights",
-      "name": "TEXT_LG_LINE_HEIGHT",
-      "originalValue": "{!LINE_HEIGHT_LG}"
+      "originalValue": "{!LINE_HEIGHT_LG}",
+      "name": "TEXT_LG_LINE_HEIGHT"
     },
     "TEXT_SM_FONT_SIZE": {
       "value": "14",
@@ -1096,12 +1258,19 @@
       "originalValue": "{!FONT_WEIGHT_REGULAR}",
       "name": "TEXT_SM_FONT_WEIGHT"
     },
+    "TEXT_SM_LETTER_SPACING": {
+      "value": 0,
+      "type": "letter-spacing",
+      "category": "letter-spacings",
+      "originalValue": "{!LETTER_SPACING_SM}",
+      "name": "TEXT_SM_LETTER_SPACING"
+    },
     "TEXT_SM_LINE_HEIGHT": {
-      "value": "20",
+      "value": 20.339999999999996,
       "type": "size",
       "category": "line-heights",
-      "name": "TEXT_SM_LINE_HEIGHT",
-      "originalValue": "{!LINE_HEIGHT_SM}"
+      "originalValue": "{!LINE_HEIGHT_SM}",
+      "name": "TEXT_SM_LINE_HEIGHT"
     },
     "TEXT_XL_FONT_SIZE": {
       "value": "24",
@@ -1117,12 +1286,19 @@
       "originalValue": "{!FONT_WEIGHT_REGULAR}",
       "name": "TEXT_XL_FONT_WEIGHT"
     },
+    "TEXT_XL_LETTER_SPACING": {
+      "value": -0.024999999999999998,
+      "type": "letter-spacing",
+      "category": "letter-spacings",
+      "originalValue": "{!LETTER_SPACING_XL}",
+      "name": "TEXT_XL_LETTER_SPACING"
+    },
     "TEXT_XL_LINE_HEIGHT": {
-      "value": "32",
+      "value": 35.029999999999994,
       "type": "size",
       "category": "line-heights",
-      "name": "TEXT_XL_LINE_HEIGHT",
-      "originalValue": "{!LINE_HEIGHT_XL}"
+      "originalValue": "{!LINE_HEIGHT_XL}",
+      "name": "TEXT_XL_LINE_HEIGHT"
     },
     "TEXT_XS_FONT_SIZE": {
       "value": "12",
@@ -1138,15 +1314,22 @@
       "originalValue": "{!FONT_WEIGHT_REGULAR}",
       "name": "TEXT_XS_FONT_WEIGHT"
     },
+    "TEXT_XS_LETTER_SPACING": {
+      "value": 0,
+      "type": "letter-spacing",
+      "category": "letter-spacings",
+      "originalValue": "{!LETTER_SPACING_XS}",
+      "name": "TEXT_XS_LETTER_SPACING"
+    },
     "TEXT_XS_LINE_HEIGHT": {
-      "value": "18",
+      "value": 18.08,
       "type": "size",
       "category": "line-heights",
-      "name": "TEXT_XS_LINE_HEIGHT",
-      "originalValue": "{!LINE_HEIGHT_XS}"
+      "originalValue": "{!LINE_HEIGHT_XS}",
+      "name": "TEXT_XS_LINE_HEIGHT"
     },
     "TEXT_XXL_FONT_SIZE": {
-      "value": "34",
+      "value": "36",
       "type": "font-size",
       "category": "font-sizes",
       "originalValue": "{!FONT_SIZE_XXL}",
@@ -1159,12 +1342,47 @@
       "originalValue": "{!FONT_WEIGHT_REGULAR}",
       "name": "TEXT_XXL_FONT_WEIGHT"
     },
+    "TEXT_XXL_LETTER_SPACING": {
+      "value": -0.027777777777777776,
+      "type": "letter-spacing",
+      "category": "letter-spacings",
+      "originalValue": "{!LETTER_SPACING_XXL}",
+      "name": "TEXT_XXL_LETTER_SPACING"
+    },
     "TEXT_XXL_LINE_HEIGHT": {
-      "value": "40",
+      "value": 53.10999999999999,
       "type": "size",
       "category": "line-heights",
-      "name": "TEXT_XXL_LINE_HEIGHT",
-      "originalValue": "{!LINE_HEIGHT_XXL}"
+      "originalValue": "{!LINE_HEIGHT_XXL}",
+      "name": "TEXT_XXL_LINE_HEIGHT"
+    },
+    "TEXT_XXXL_FONT_SIZE": {
+      "value": "42",
+      "type": "font-size",
+      "category": "font-sizes",
+      "originalValue": "{!FONT_SIZE_XXXL}",
+      "name": "TEXT_XXXL_FONT_SIZE"
+    },
+    "TEXT_XXXL_FONT_WEIGHT": {
+      "value": "400",
+      "type": "string",
+      "category": "font-weights",
+      "originalValue": "{!FONT_WEIGHT_REGULAR}",
+      "name": "TEXT_XXXL_FONT_WEIGHT"
+    },
+    "TEXT_XXXL_LETTER_SPACING": {
+      "value": -0.02857142857142857,
+      "type": "letter-spacing",
+      "category": "letter-spacings",
+      "originalValue": "{!LETTER_SPACING_XXXL}",
+      "name": "TEXT_XXXL_LETTER_SPACING"
+    },
+    "TEXT_XXXL_LINE_HEIGHT": {
+      "value": 62.14999999999999,
+      "type": "size",
+      "category": "line-heights",
+      "originalValue": "{!LINE_HEIGHT_XXXL}",
+      "name": "TEXT_XXXL_LINE_HEIGHT"
     }
   },
   "propKeys": [
@@ -1254,17 +1472,29 @@
     "FONT_FAMILY",
     "FONT_FAMILY_EMPHASIZE",
     "FONT_SIZE_BASE",
+    "FONT_SIZE_CAPS",
     "FONT_SIZE_LG",
     "FONT_SIZE_SM",
     "FONT_SIZE_XL",
     "FONT_SIZE_XS",
     "FONT_SIZE_XXL",
+    "FONT_SIZE_XXXL",
+    "LETTER_SPACING_BASE",
+    "LETTER_SPACING_CAPS",
+    "LETTER_SPACING_LG",
+    "LETTER_SPACING_SM",
+    "LETTER_SPACING_XL",
+    "LETTER_SPACING_XS",
+    "LETTER_SPACING_XXL",
+    "LETTER_SPACING_XXXL",
     "LINE_HEIGHT_BASE",
+    "LINE_HEIGHT_CAPS",
     "LINE_HEIGHT_LG",
     "LINE_HEIGHT_SM",
     "LINE_HEIGHT_XL",
     "LINE_HEIGHT_XS",
     "LINE_HEIGHT_XXL",
+    "LINE_HEIGHT_XXXL",
     "SPACING_BASE",
     "SPACING_LG",
     "SPACING_MD",
@@ -1274,22 +1504,36 @@
     "SPACING_XXL",
     "TEXT_BASE_FONT_SIZE",
     "TEXT_BASE_FONT_WEIGHT",
+    "TEXT_BASE_LETTER_SPACING",
     "TEXT_BASE_LINE_HEIGHT",
+    "TEXT_CAPS_FONT_SIZE",
+    "TEXT_CAPS_FONT_WEIGHT",
+    "TEXT_CAPS_LETTER_SPACING",
+    "TEXT_CAPS_LINE_HEIGHT",
     "TEXT_EMPHASIZED_FONT_WEIGHT",
     "TEXT_LG_FONT_SIZE",
     "TEXT_LG_FONT_WEIGHT",
+    "TEXT_LG_LETTER_SPACING",
     "TEXT_LG_LINE_HEIGHT",
     "TEXT_SM_FONT_SIZE",
     "TEXT_SM_FONT_WEIGHT",
+    "TEXT_SM_LETTER_SPACING",
     "TEXT_SM_LINE_HEIGHT",
     "TEXT_XL_FONT_SIZE",
     "TEXT_XL_FONT_WEIGHT",
+    "TEXT_XL_LETTER_SPACING",
     "TEXT_XL_LINE_HEIGHT",
     "TEXT_XS_FONT_SIZE",
     "TEXT_XS_FONT_WEIGHT",
+    "TEXT_XS_LETTER_SPACING",
     "TEXT_XS_LINE_HEIGHT",
     "TEXT_XXL_FONT_SIZE",
     "TEXT_XXL_FONT_WEIGHT",
-    "TEXT_XXL_LINE_HEIGHT"
+    "TEXT_XXL_LETTER_SPACING",
+    "TEXT_XXL_LINE_HEIGHT",
+    "TEXT_XXXL_FONT_SIZE",
+    "TEXT_XXXL_FONT_WEIGHT",
+    "TEXT_XXXL_LETTER_SPACING",
+    "TEXT_XXXL_LINE_HEIGHT"
   ]
 }

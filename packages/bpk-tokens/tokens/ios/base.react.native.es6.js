@@ -96,18 +96,30 @@ export const colorYellow700 = "rgb(225, 165, 0)";
 export const colorYellow800 = "rgb(194, 142, 0)";
 export const colorYellow900 = "rgb(156, 114, 0)";
 export const fontFamily = "System";
-export const fontSizeBase = 15;
-export const fontSizeLg = 17;
-export const fontSizeSm = 13;
-export const fontSizeXl = 20;
-export const fontSizeXs = 11;
-export const fontSizeXxl = 34;
-export const lineHeightBase = 20;
-export const lineHeightLg = 22;
+export const fontSizeBase = 16;
+export const fontSizeCaps = 10;
+export const fontSizeLg = 20;
+export const fontSizeSm = 14;
+export const fontSizeXl = 24;
+export const fontSizeXs = 12;
+export const fontSizeXxl = 36;
+export const fontSizeXxxl = 42;
+export const letterSpacingBase = 0.12;
+export const letterSpacingCaps = 0.28;
+export const letterSpacingLg = -0.78;
+export const letterSpacingSm = 0.154;
+export const letterSpacingXl = -0.96;
+export const letterSpacingXs = 0;
+export const letterSpacingXxl = -1.396;
+export const letterSpacingXxxl = -1.6199999999999999;
+export const lineHeightBase = 21;
+export const lineHeightCaps = 13;
+export const lineHeightLg = 26;
 export const lineHeightSm = 18;
-export const lineHeightXl = 24;
-export const lineHeightXs = 13;
-export const lineHeightXxl = 41;
+export const lineHeightXl = 31;
+export const lineHeightXs = 16;
+export const lineHeightXxl = 47;
+export const lineHeightXxxl = 55;
 export const shadowLgColor = "rgb(37, 32, 51)";
 export const shadowLgOffsetHeight = 4;
 export const shadowLgOffsetWidth = 0;
@@ -130,25 +142,39 @@ export const spacingNone = 0;
 export const spacingSm = 4;
 export const spacingXl = 32;
 export const spacingXxl = 40;
-export const textBaseFontSize = 15;
+export const textBaseFontSize = 16;
 export const textBaseFontWeight = "400";
-export const textBaseLineHeight = 20;
+export const textBaseLetterSpacing = 0.12;
+export const textBaseLineHeight = 21;
+export const textCapsFontSize = 10;
+export const textCapsFontWeight = "400";
+export const textCapsLetterSpacing = 0.28;
+export const textCapsLineHeight = 13;
 export const textEmphasizedFontWeight = "600";
-export const textLgFontSize = 17;
+export const textLgFontSize = 20;
 export const textLgFontWeight = "400";
-export const textLgLineHeight = 22;
-export const textSmFontSize = 13;
+export const textLgLetterSpacing = -0.78;
+export const textLgLineHeight = 26;
+export const textSmFontSize = 14;
 export const textSmFontWeight = "400";
+export const textSmLetterSpacing = 0.154;
 export const textSmLineHeight = 18;
-export const textXlFontSize = 20;
+export const textXlFontSize = 24;
 export const textXlFontWeight = "400";
-export const textXlLineHeight = 24;
-export const textXsFontSize = 11;
+export const textXlLetterSpacing = -0.96;
+export const textXlLineHeight = 31;
+export const textXsFontSize = 12;
 export const textXsFontWeight = "400";
-export const textXsLineHeight = 13;
-export const textXxlFontSize = 34;
+export const textXsLetterSpacing = 0;
+export const textXsLineHeight = 16;
+export const textXxlFontSize = 36;
 export const textXxlFontWeight = "700";
-export const textXxlLineHeight = 41;
+export const textXxlLetterSpacing = -1.396;
+export const textXxlLineHeight = 47;
+export const textXxxlFontSize = 42;
+export const textXxxlFontWeight = "700";
+export const textXxxlLetterSpacing = -1.6199999999999999;
+export const textXxxlLineHeight = 55;
 export const touchableOverlayColor = "rgb(37, 32, 51)";
 export const touchableOverlayOpacity = 0.15;
 export const underlayColor = "rgb(37, 32, 51)";
@@ -251,28 +277,60 @@ colorYellow900,
 };
 export const fontSizes = {
 textBaseFontSize,
+textCapsFontSize,
 textLgFontSize,
 textSmFontSize,
 textXlFontSize,
 textXsFontSize,
 textXxlFontSize,
+textXxxlFontSize,
 };
 export const fontWeights = {
 textBaseFontWeight,
+textCapsFontWeight,
 textEmphasizedFontWeight,
 textLgFontWeight,
 textSmFontWeight,
 textXlFontWeight,
 textXsFontWeight,
 textXxlFontWeight,
+textXxxlFontWeight,
+};
+export const letterSpacings = {
+letterSpacingBase,
+letterSpacingCaps,
+letterSpacingLg,
+letterSpacingSm,
+letterSpacingXl,
+letterSpacingXs,
+letterSpacingXxl,
+letterSpacingXxxl,
+textBaseLetterSpacing,
+textCapsLetterSpacing,
+textLgLetterSpacing,
+textSmLetterSpacing,
+textXlLetterSpacing,
+textXsLetterSpacing,
+textXxlLetterSpacing,
+textXxxlLetterSpacing,
 };
 export const lineHeights = {
+lineHeightBase,
+lineHeightCaps,
+lineHeightLg,
+lineHeightSm,
+lineHeightXl,
+lineHeightXs,
+lineHeightXxl,
+lineHeightXxxl,
 textBaseLineHeight,
+textCapsLineHeight,
 textLgLineHeight,
 textSmLineHeight,
 textXlLineHeight,
 textXsLineHeight,
 textXxlLineHeight,
+textXxxlLineHeight,
 };
 export const radii = {
 borderRadiusPill,
@@ -301,15 +359,11 @@ underlayOpacity,
 export const typesettings = {
 fontFamily,
 fontSizeBase,
+fontSizeCaps,
 fontSizeLg,
 fontSizeSm,
 fontSizeXl,
 fontSizeXs,
 fontSizeXxl,
-lineHeightBase,
-lineHeightLg,
-lineHeightSm,
-lineHeightXl,
-lineHeightXs,
-lineHeightXxl,
+fontSizeXxxl,
 };
