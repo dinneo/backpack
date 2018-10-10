@@ -16,11 +16,13 @@ See the License for the specific language governing permissions and
 limitations under the License.
 `;
 
-export const xmlComment = `
+const xmlComment = `
 <!--
 ${TEXT.replace(/^/gm, '  ')}
 -->`;
 
-export const blockComment = `/*
+const blockComment = `/*
 ${TEXT.replace(/^/gm, ' * ')}
  */`;
+
+export { xmlComment, blockComment };
