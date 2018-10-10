@@ -22,13 +22,25 @@ import { type Node } from 'react';
 import PropTypes from 'prop-types';
 import { Platform, StyleSheet, type StyleObj } from 'react-native';
 
-export const TEXT_STYLES = ['xs', 'sm', 'base', 'lg', 'xl', 'xxl'];
+export const TEXT_STYLES = [
+  'caps',
+  'xs',
+  'sm',
+  'base',
+  'lg',
+  'xl',
+  'xxl',
+  'xxxl',
+];
 export type TextStyle = 'xs' | 'sm' | 'base' | 'lg' | 'xl' | 'xxl';
+
+export const EMPHASIS_STYLES = ['regular', 'semiBold', 'heavy'];
+export type EmphasisStyle = 'regular' | 'semiBold' | 'heavy';
 
 export type Props = {
   children: Node,
   textStyle: TextStyle,
-  emphasize: boolean,
+  emphasize: EmphasisStyle,
   style: ?StyleObj,
 };
 
@@ -38,17 +50,17 @@ export const emphasizePropType = (
   componentName: string,
 ) => {
   const value = props[propName];
-  if (typeof value !== 'boolean') {
+  if (EmphasisStyle.includes(value)) {
     return new Error(
-      `Invalid prop \`${propName}\` of type \`${typeof value}\` supplied to \`${componentName}\`, expected \`boolean\`.`,
+      `Invalid prop \`${propName}\` of type \`${typeof value}\` supplied to \`${componentName}\`, expected one of ${EmphasisStyle.toString()}.`,
     ); // eslint-disable-line max-len
   }
 
   const enabled = !!value;
 
-  if (Platform.OS === 'ios' && (enabled && props.textStyle === 'xxl')) {
+  if (Platform.OS === 'ios' && (enabled && props.textStyle.includes('xxl'))) {
     return new Error(
-      `Invalid prop \`${propName}\` of value \`${value}\` supplied to \`${componentName}\`. On iOS, \`textStyle\` value of \`xxl\` cannot be emphasized.`,
+      `Invalid prop \`${propName}\` of value \`${value}\` supplied to \`${componentName}\`. On iOS, \`textStyle\` value of \`xxl\` or \`xxxl\` cannot be emphasized.`,
     ); // eslint-disable-line max-len
   }
 
@@ -84,6 +96,6 @@ export const propTypes = {
 
 export const defaultProps = {
   textStyle: 'base',
-  emphasize: false,
+  emphasize: EMPHASIS_STYLES.regular,
   style: null,
 };

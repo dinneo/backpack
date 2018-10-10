@@ -24,18 +24,38 @@ import {
   fontFamily,
   fontFamilyEmphasize,
   textEmphasizedFontWeight,
+  letterSpacingCaps,
+  textCapsFontSize,
+  textCapsLineHeight,
+  textCapsFontWeight,
+  letterSpacingXs,
   textXsFontSize,
+  textXsLineHeight,
   textXsFontWeight,
+  letterSpacingSm,
   textSmFontSize,
+  textSmLineHeight,
   textSmFontWeight,
+  letterSpacingBase,
   textBaseFontSize,
+  textBaseLineHeight,
   textBaseFontWeight,
+  letterSpacingLg,
   textLgFontSize,
+  textLgLineHeight,
   textLgFontWeight,
+  letterSpacingXl,
   textXlFontSize,
+  textXlLineHeight,
   textXlFontWeight,
+  letterSpacingXxl,
   textXxlFontSize,
+  textXxlLineHeight,
   textXxlFontWeight,
+  letterSpacingXxxl,
+  textXxxlFontSize,
+  textXxxlLineHeight,
+  textXxxlFontWeight,
 } from 'bpk-tokens/tokens/base.react.native';
 import { Text, Platform, StyleSheet } from 'react-native';
 
@@ -43,33 +63,58 @@ import { shouldApplyFontWeightFix } from './font-weight-fix';
 import { propTypes, defaultProps, type Props } from './common-types';
 
 const TEXT_TOKENS = {
+  letterSpacingCaps,
+  textCapsFontSize,
+  textCapsLineHeight,
+  textCapsFontWeight,
+  letterSpacingXs,
   textXsFontSize,
+  textXsLineHeight,
   textXsFontWeight,
+  letterSpacingSm,
   textSmFontSize,
+  textSmLineHeight,
   textSmFontWeight,
+  letterSpacingBase,
   textBaseFontSize,
+  textBaseLineHeight,
   textBaseFontWeight,
+  letterSpacingLg,
   textLgFontSize,
+  textLgLineHeight,
   textLgFontWeight,
+  letterSpacingXl,
   textXlFontSize,
+  textXlLineHeight,
   textXlFontWeight,
+  letterSpacingXxl,
   textXxlFontSize,
+  textXxlLineHeight,
   textXxlFontWeight,
+  letterSpacingXxxl,
+  textXxxlFontSize,
+  textXxxlLineHeight,
+  textXxxlFontWeight,
 };
 
 const getStyleByTextStyle = textStyle => {
   const camelCasedStyle = textStyle[0].toUpperCase() + textStyle.slice(1);
 
   const {
+    [`letterSpacing${camelCasedStyle}`]: letterSpacing,
     [`text${camelCasedStyle}FontSize`]: fontSize,
     [`text${camelCasedStyle}FontWeight`]: fontWeight,
+    [`text${camelCasedStyle}LineHeight`]: lineHeight,
   } = TEXT_TOKENS;
 
   return {
     color: colorGray700,
+    letterSpacing,
     fontFamily,
     fontSize,
     fontWeight,
+    lineHeight,
+    includeFontPadding: false,
   };
 };
 
@@ -86,12 +131,14 @@ const getEmphasizeProperties = () => {
 };
 
 const styles = StyleSheet.create({
+  caps: { ...getStyleByTextStyle('caps') },
   xs: { ...getStyleByTextStyle('xs') },
   sm: { ...getStyleByTextStyle('sm') },
   base: { ...getStyleByTextStyle('base') },
   lg: { ...getStyleByTextStyle('lg') },
   xl: { ...getStyleByTextStyle('xl') },
   xxl: { ...getStyleByTextStyle('xxl') },
+  xxxl: { ...getStyleByTextStyle('xxxl') },
 });
 
 const BpkText = (props: Props) => {
@@ -101,7 +148,8 @@ const BpkText = (props: Props) => {
   // Emphasize on iOS is not supported for the XXL size. This is also checked with
   // the `emphasizePropType` prop.
   const shouldEmpasize =
-    emphasize && !(Platform.OS === 'ios' && textStyle === 'xxl');
+    emphasize !== 'regular' &&
+    !(Platform.OS === 'ios' && textStyle.includes('xxl'));
 
   if (shouldEmpasize) {
     style.push(getEmphasizeProperties());
@@ -111,7 +159,7 @@ const BpkText = (props: Props) => {
     }
   }
 
-  if (shouldApplyFontWeightFix && textStyle === 'xxl') {
+  if (shouldApplyFontWeightFix && textStyle.includes('xxl')) {
     style.push({ fontWeight: '800' });
   }
 
