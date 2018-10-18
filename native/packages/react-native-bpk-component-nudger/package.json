@@ -17,7 +17,7 @@
     "react-native-bpk-theming": "^1.0.79"
   },
   "dependencies": {
-    "bpk-tokens": "^27.1.0",
+    "bpk-tokens": "27.1.0-beta.4",
     "lodash": "^4.17.5",
     "prop-types": "^15.5.8",
     "react-native-bpk-component-button": "^7.1.19",
