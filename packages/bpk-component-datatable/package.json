@@ -21,6 +21,6 @@
     "react-virtualized": "^9.20.1"
   },
   "devDependencies": {
-    "bpk-tokens": "^27.1.0"
+    "bpk-tokens": "27.1.0-beta.4"
   }
 }

@@ -22,6 +22,6 @@
   "devDependencies": {
     "bpk-component-mobile-scroll-container": "^1.1.26",
     "bpk-component-text": "^1.0.83",
-    "bpk-tokens": "^27.1.0"
+    "bpk-tokens": "27.1.0-beta.4"
   }
 }

@@ -18,6 +18,6 @@
     "react-responsive": "^5.0.0"
   },
   "devDependencies": {
-    "bpk-tokens": "^27.1.0"
+    "bpk-tokens": "27.1.0-beta.4"
   }
 }
